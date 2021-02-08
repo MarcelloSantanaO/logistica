@@ -31,5 +31,3 @@ class LogisticResource(BaseResource):
     @marshal_with(fields)
     def delete(self, id):
         return super().delete(id)
-
-        
