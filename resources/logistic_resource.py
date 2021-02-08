@@ -3,6 +3,7 @@ from flask_restful import fields, marshal_with
 from dao.logistic_dao import LogisticDao
 from model.logistics import Logistic
 
+
 class LogisticResource(BaseResource):
     fields = {
         'id_': fields.Integer,
