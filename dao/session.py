@@ -1,6 +1,7 @@
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
+
 class Session:
     def __init__(self):
         connector = 'postgresql'
