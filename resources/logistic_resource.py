@@ -3,7 +3,6 @@ from flask_restful import fields, marshal_with
 from dao.logistic_dao import LogisticDao
 from model.logistics import Logistic
 
-
 class LogisticResource(BaseResource):
     fields = {
         'id_': fields.Integer,
@@ -30,4 +29,6 @@ class LogisticResource(BaseResource):
 
     @marshal_with(fields)
     def delete(self, id):
-        return super().delete(id)    
+        return super().delete(id)
+
+        
