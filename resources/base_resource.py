@@ -3,6 +3,7 @@ from flask import request
 from flask_restful import Resource
 from dao.base_dao import BaseDao
 
+
 class BaseResource(Resource):
     def __init__(self, dao: BaseDao, model_type: Type) -> None:
         self.__dao = dao
